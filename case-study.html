@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Chandler Love Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+               <img src="img/logo.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Intro -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">Case study of <strong>myFlix Client and API</strong></h1>
+            <p class="section__subtitle section__subtitle--intro">Full-Stack Web Dev</p>
+            <img src="img/myFlix2.jpeg" alt="a picture of Chandler Love" class="intro__img">
+        </section>
+
+
+        <div class="case-study">
+            <h2>Introduction</h2>
+		<p>Overview: The purpose of this project was to give users access to information about movies (including genre and director). The user should be able to signup/login and then be displayed the movie list. From that they can add movies to their favorites and view/edit/delete their profile. 
+			<br>Purpose: This was a project I created as part of my Full-Stack course with CareerFoundry.
+			<br>Objective: The objective of this project was to create and understand backend/server-side as well as creating a client side that can connect to the server-side.
+			<br>Project scale: Probably a 5-6-month project but took closer to 9 months to finish. This was 2 separate projects in my course, but I combined them here since they rely on each other. 
+			</p>
+			<h2>Tools Used</h2>
+			<ul class="tools-list">
+				<li>React</li>
+				<li>React Bootstrap</li>
+				<li>React Redux</li>
+				<li>Parcel</li>
+				<li>MongoDB</li>
+				<li>Express</li>
+				<li>Mongoose</li>
+				<li>Node.js</li>
+				<li>JavaScript</li>
+			</ul>
+			<h2>Server-Side</h2>
+			<p>For the server-side I created a RESTful API. This was done with a nonrelational database (mongoDB), Express, and Node.js. Here is where you use common HTTP methods such as GET, PUT, and DELETE. This is where all the information is stored from user info to movie info. The API provides info in JSON format. Postman was my friend at this point in the project. I used postman to check my endpoints and make sure that everything worked properly. After implementing this I added JWT authentication which made it where the user had to have a token to log in. This is used to help secure user information.</p>
+			<img  src="img/api-movies.PNG">
+			<h2>Client-Side</h2>
+			<p>This step was started after finishing the API. I built an interface that would allow users to create a login and profile so they could retrieve the movie list. This was developed with React and React Redux. Include in the project was a login view, main view, movie view, and profile view. The login view allowed user to login or signup if they were a new user. The main view showed a list of all movies. The movie view should a single movie when the user clicked on a movie. Lastly, the profile view showed the users profile where they could access favorite movies, update their profile, and delete account. 
+			</p>
+			<img src="img/myflix.PNG">
+			<h2>Challenges</h2>
+			<p>This project was by far my biggest challenge throughout my Full-Stack course. It took a lot more time than I expected to spend on it. This was mainly due to React. It was my first time using React and it proved to be difficult but with help from my mentor and tutor I got through it and learned a lot in the process. I also ran into some problems when creating the server-side. The problems with server-side were mainly due to all my data being erased from mongoDB (my mentor and tutor still aren’t sure how this happened). To deal with these challenges I took a few different steps. To start with I booked calls with mentor to talk through the problems I was facing. Also, I completed a few small react YouTube tutorials to help myself better understand react. Lastly, I searched specific coding problems or issue I had on Stack Overflow.  </p>
+			<h2>Conclusion</h2>
+			<p>Overall, this was a very difficult but rewarding task. I faced many challenges and an extended timeline, but this will greatly prepare me for using React in the future. Facing challenges are sometimes the best way to learn and progress and I certainly feel like I did that with this project. Reflecting on the project now I think it could use some more styling to really show off all my skills. Otherwise, it runs very well, and everything functions as expected. </p>
+
+            <a href="https://github.com/clove20123/myFlix-client" class="btn">Check out this project on GitHub!</a>
+            <a href="index.html" class="btn">Go back to my portfolio</a>
+	
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="footer" id="contact">
+            <a href="mailto:clove20123@gmail.com" class="footer__link">Email Me</a>
+            <ul class="social-list">
+                <li class="social-list__item"><a class="social-list__link" href="https://github.com/clove20123"><i class="fab fa-github"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href=""><i class="fab fa-xing"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href=""><i class="fab fa-twitter"></i></a></li>
+
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>

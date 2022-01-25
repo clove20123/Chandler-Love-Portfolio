@@ -26,6 +26,7 @@
                     <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact Me</a></li>
                 </ul>
             </nav>
         </header>
@@ -43,21 +44,38 @@
             <div class="services">
                 <div class="service">
                     <h3>Back-End</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dicta repellat ipsa eaque quaerat nesciunt, odio porro tenetur deserunt natus consequuntur error! Deleniti sapiente quas veniam quibusdam esse non ullam.</p>
+                    <ul class="service-list">
+                        <li class="service-list__item">PostgresSQL</li>
+                        <li class="service-list__item">MongoDB</li>
+                        <li class="service-list__item">MySQL</li>
+                        <li class="service-list__item">APIs</li>
+                    </ul>
                 </div> <!-- / service -->
 
                 <div class="service">
                     <h3>Front-End</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus maiores illum eius blanditiis? Tempora nesciunt commodi porro deleniti, accusantium nisi ab voluptate sequi soluta error consequatur perspiciatis illum labore voluptatem!</p>
+                    <ul class="service-list"> 
+                        <li class="service-list__item">HTML/CSS</li>
+                        <li class="service-list__item">JavaScript</li>
+                        <li class="service-list__item">React/Redux/Angular</li>
+                        <li class="service-list__item">Node.js</li>
+                    </ul>
                 </div> <!-- / service -->    
             
                 <div class="service">
                     <h3>Other</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sequi totam veritatis doloribus. Consequatur, consectetur! Possimus saepe voluptatem sint veritatis. Tenetur corporis natus molestias eveniet ut excepturi, perferendis error earum?</p>
+                    <ul class="service-list">
+                        <li class="service-list__item">Git</li>
+                        <li class="service-list__item">VSCode</li>
+                        <li class="service-list__item">Testing</li>
+                        <li class="service-list__item">React Native</li>
+                    </ul>
                 </div> <!-- / service -->
             </div> <!-- / services -->
             
             <a href="#work" class="btn">My Work</a>
+
+            
         </section>
 
         <!-- About Me -->
@@ -67,16 +85,17 @@
 
             <div class="about-me__body">
                 <p>Hi, I’m Chandler Love, a junior full-stack web developer based in Munich Germany. I have experience in sales, where my role was sales representative. I specialized in acquiring customers, helping resolve customer complaints, and provided a link between customers and management. In this role I learned how to build strong relationships, deal with problems in a fast and efficient mannor, and most importantly listen. After spending 7 years in the field, I decided to pursue my passion which was web development. Within a year I had completed a full-stack web development course where I created interesting projects that ranged from APIs to mobile chat applications. Since completing the course I have continued to work on new projects to broaden my knowledge of the web dev world.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima reiciendis sed voluptates nisi magni asperiores commodi veritatis eligendi obcaecati. Qui quasi repudiandae illo quas ullam asperiores hic, ducimus blanditiis impedit?</p>
+                <p>I am a laid-back guy from North Carolina, USA that enjoys playing golf, gaming, and cooking. My wife and I have two dogs that shed and wreak havoc, but we still love them. I am a big family guy so always staying in touch with my family even though they are in the USA. If you want to know anything else about me reach out, I’m always happy to chat.</p>
             </div>
-
+            
             <img src="img/me1.JPG" alt="Chandler relaxing" class="about-me__img">
+            <a href="files/Love, Chandler - Junior Web Developer.pdf" class="btn" download>Download my CV</a>
         </section>
 
         <!-- My Work -->
         <section class="my-work" id="work">
             <h2 class="section_title section_title--work">My Work</h2>
-            <p class="section__subtitle section__subtitle--work">A selection of my work</p>
+            <p class="section__subtitle section__subtitle--work">Click on the pictures to see my case-study/work.</p>
 
             <div class="portfolio">
                  <!-- Portfolio item 02 -->
@@ -88,7 +107,7 @@
                     <img src="img/chatApp2.jpeg" alt="moblie chat app" class="portfolio__img" >
                 </a>
                  <!-- Portfolio item 06 -->
-                 <a href="https://github.com/clove20123/myFlix-client" target="_blank" class="portfolio__item">
+                 <a href="case-study.html" target="_blank" class="portfolio__item">
                     <img src="img/myFlix2.jpeg" alt="Movie application made with React" class="portfolio__img" >
                 </a>
 
@@ -104,14 +123,16 @@
                  <!-- Portfolio item 04 -->
                  <a href="https://clove20123.github.io/myFlix-Angular-Client/welcome" target="_blank" class="portfolio__item">
                     <img src="img/myFlix-Angular2.jpeg" alt="Movie application made with angular" class="portfolio__img" >
-                </a>
+                </a><br>
+
+                
 
 
             </div>
         </section>
 
         <!-- Footer -->
-        <footer class="footer">
+        <footer class="footer" id="contact">
             <a href="mailto:clove20123@gmail.com" class="footer__link">Email Me</a>
             <ul class="social-list">
                 <li class="social-list__item"><a class="social-list__link" href="https://github.com/clove20123"><i class="fab fa-github"></i></a></li>

@@ -79,6 +79,7 @@ strong {
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
+    text-align: center;
 }
 
 .btn:hover {
@@ -300,6 +301,14 @@ header {
     margin-bottom: 4em;
 }
 
+.service-list {
+    list-style: disc;
+}
+
+.service-list__item {
+    text-align: center;
+}
+
 .service {
     max-width: 500px;
     margin: 0 auto;
@@ -365,6 +374,21 @@ header {
 .my-work {
     background-color: var(--clr-accent);
     color: var(--clr-dark);
+    text-align: center;
+}
+
+.btn-cv {
+    display: inline-block;
+    padding: .5em 2.5em;
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
     text-align: center;
 }
 
@@ -440,4 +464,12 @@ header {
 
 .social-list__link {
     padding: .5em;
+}
+
+/* Case Study */
+
+.case-study {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
 }
